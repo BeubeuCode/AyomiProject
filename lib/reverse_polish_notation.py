@@ -17,3 +17,5 @@ class ReversePolishNotation:
             else:
                 self.push(item)
         return self.pop()
+
+reverse_polish_notation_calculator_instance = ReversePolishNotation()
