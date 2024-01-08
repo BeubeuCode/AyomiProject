@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from lib.reverse_polish_notation import reverse_polish_notation_calculator_instance
+from lib.reverse_polish_notation import ReversePolishNotation
 
 
 app = FastAPI()
@@ -20,5 +20,6 @@ def compute_get():
 
 @app.post('/compute/')
 def compute(request: ComputeRequest):
-    return {'result': reverse_polish_notation_calculator_instance.calculate(request.calculation)}
+    rpn = ReversePolishNotation()
+    return {'result': rpn.calculate(request.calculation)}
 
