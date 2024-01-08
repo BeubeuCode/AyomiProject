@@ -9,11 +9,27 @@ class ReversePolishNotation:
         return self.stack.pop()
 
     def calculate(self, expression):
-        for item in expression:
-            if item in ['+', '-', '*', '/']:
-                second = self.pop()
-                first = self.pop()
-                self.push(eval(str(first) + item + str(second)))
+        # operator list with lambda functions
+        operators = {'+': lambda x, y: x + y,
+                     '-': lambda x, y: x - y,
+                     '*': lambda x, y: x * y,
+                     '/': lambda x, y: x / y}
+        for token in expression.split():
+            if token.isdigit():
+                self.stack.append(float(token))
+            elif token in operators:
+                if len(self.stack) < 2:
+                    raise ValueError("Invalid expression: Not enough operands for operator")
+                else:
+                    operand2 = self.stack.pop()
+                    operand1 = self.stack.pop()
+                    result = operators[token](operand1, operand2)
+                    self.stack.append(result)
             else:
-                self.push(item)
-        return self.pop()
+                raise ValueError("Invalid expression: Unknown operator")
+
+
+        if len(self.stack) != 1:
+            raise ValueError("Invalid expression: Too many operands")
+
+        return self.stack[0]

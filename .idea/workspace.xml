@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42a6b606-1838-4146-b73b-2d3e675d07b7" name="Changes" comment="">
+    <list default="true" id="42a6b606-1838-4146-b73b-2d3e675d07b7" name="Changes" comment="init post compute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/reverse_polish_notation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/reverse_polish_notation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "reverse__polish__notation",
+    "git-widget-placeholder": "handle-compute",
     "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable"
   }
 }]]></component>
@@ -67,6 +68,15 @@
       <option name="presentableId" value="Default" />
       <updated>1704538681572</updated>
     </task>
+    <task id="LOCAL-00001" summary="init post compute">
+      <option name="closed" value="true" />
+      <created>1704646571778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704646571778</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,5 +92,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add gitignore" />
+    <MESSAGE value="init post compute" />
+    <option name="LAST_COMMIT_MESSAGE" value="init post compute" />
   </component>
 </project>
