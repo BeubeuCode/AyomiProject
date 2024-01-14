@@ -1,3 +1,3 @@
 # Test technique Ayomi
 
-`uvicorn main:app --reload`
+to boot server : `docker compose up`
